@@ -30,12 +30,12 @@
         <ul class="ul-menu">
           <li class="li-menu-nav">MENU DE NAVEGACION</li>
           <li><a href="{{ url('/admin/admin-welcome') }}"><i class="fa fa-home"></i>Inicio</a></li>
-          <li class="active"><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Clientes</a></li>
-          <li><a href="{{ url('/admin/employee') }}"><i class="fa fa-user"></i>Empleados</a></li>
+          <li ><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Clientes</a></li>
+          <li class="active"><a href="{{ url('/admin/employee') }}"><i class="fa fa-user"></i>Empleados</a></li>
           <li class="li-menu-nav">INVENTARIO</li>
           <li><a href="inventary/product.html"><i class="fa fa-pencil-square"></i>Inventario</a></li>
           <li class="li-menu-nav">COTIZACION</li>
-          <li><a href="quotation/quotation.html"><i class="fa fa-book"></i>Cotizacion</a></li>
+          <li><a href="{{url('/admin/quotation')}}"><i class="fa fa-book"></i>Cotizacion</a></li>
         </ul>
       </aside>
       <div class="container" id="container">
@@ -45,52 +45,48 @@
             <ol>
               Se encuentra en
               <li><i class="fa fa-home"></i>Inicio</li>
-              <li class="ol-active"><i class="fa fa-users"></i>Clientes</li>
+              <li class="small-active"><i class="fa fa-users"></i>Empleado</li>
             </ol>
           </div>
         </div>
         <div class="table-container">
           <div class="container-search">
-            <a href="{{ url('/admin/add-client') }}" class="btn-success" ><i class="fa fa-user-plus"></i> Registrar Cliente</a>
+            <a href="{{ url('/admin/edit-employee') }}" class="btn-success" ><i class="fa fa-user-plus"></i> Registrar Empleado</a>
           </div>
           <div class="">
             <table id="Jtabla">
               <thead>
                 <tr class="theader">
                   <th>Acciones</th>
-                  <th>RFC</th>
-                  <th>Nombre de la Empresa</th>
-                  <th>Direccion</th>
+                  <th>ID</th>
+                  <th>Nombre completo</th>
                   <th>Telefono</th>
-                  <th>Correo</th>
+                  <th>Usuario</th>
+                  <th>Contrasena</th>
                </tr>
               </thead>
               <tbody class="tbodymain">
                 <tr class="tbody">
-                  <td>
-                    <div class="action">
-                      <a href="{{ url('/admin/edit-client') }}"><i class="fa fa-pencil-square-o fa-lg"></i></a>
-                      <a href="#" alt="Eliminar"><i class="fa fa-trash-o fa-lg"></i></a>
-                    </div>
+                  <td class="action">
+                    <a href="{{url('/admin/edit-employee')}}"><i class="fa fa-pencil-square-o"></i></a>
+                    <a href="#" alt="Eliminar"><i class="fa fa-trash-o"></i></a>
                   </td>
-                  <td>PACR720402U71</td>
-                  <td>Servicios Electricos Automotriz Patricio</td>
-                  <td>Rancheria Guineo Primera seccion carretera a reforma kilometro 11.5</td>
-                  <td>9932065554</td>
-                  <td>delli.patricio.mayo@gmail.com</td>
+                  <td>1</td>
+                   <td>Jose de la cruz Acopa Martinez</td>
+                   <td>9932065554</td>
+                   <td>prueba</td>
+                   <td>1234</td>
                 </tr>
                 <tr class="tbody">
-                  <td>
-                    <div class="action">
-                      <a href="{{ url('/admin/edit-client') }}"><i class="fa fa-pencil-square-o fa-lg"></i></a>
-                      <a href="#" alt="Eliminar"><i class="fa fa-trash-o fa-lg"></i></a>
-                    </div>
+                  <td class="action">
+                    <a href="edit-employee.html"><i class="fa fa-pencil-square-o"></i></a>
+                    <a href="#" alt="Eliminar"><i class="fa fa-trash-o"></i></a>
                   </td>
-                  <td>PACR720402U71</td>
-                  <td>Servicios Electricos Automotriz Patricio</td>
-                  <td>Rancheria Guineo Primera seccion carretera a reforma kilometro 11.5</td>
-                  <td>9934298955</td>
-                  <td>jose.acopa.martinez@gmail.com</td>
+                  <td>1</td>
+                   <td>Jose de la cruz Acopa Martinez</td>
+                   <td>9932065554</td>
+                   <td>prueba</td>
+                   <td>1234</td>
                 </tr>
               </tbody>
             </table>

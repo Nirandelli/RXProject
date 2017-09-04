@@ -28,8 +28,8 @@
         </div>
         <ul class="ul-menu">
           <li class="li-menu-nav">MENU DE NAVEGACION</li>
-          <li class="active"><a href="{{ url('/admin/admin-welcome') }}"><i class="fa fa-home"></i>Inicio</a></li>
-          <li><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Clientes</a></li>
+          <li><a href="{{ url('/admin/admin-welcome') }}"><i class="fa fa-home"></i>Inicio</a></li>
+          <li class="active"><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Clientes</a></li>
           <li><a href="employee/employee.html"><i class="fa fa-user"></i>Empleados</a></li>
           <li class="li-menu-nav">INVENTARIO</li>
           <li><a href="inventary/product.html"><i class="fa fa-pencil-square"></i>Inventario</a></li>
@@ -43,41 +43,35 @@
           <div class="breadcrumb">
             <ol>
               Se encuentra en
-              <li class="ol-active"><i class="fa fa-home"></i>Inicio</li>
+              <li><i class="fa fa-home"></i>Inicio</li>
+              <li class="small-active"><i class="fa fa-pencil-square-o"></i>Editar Empleado</li>
             </ol>
           </div>
         </div>
-        <div class="eslogan">
-          <h1>RX EL EQUIPO QUE SE MUEVE A DONDE TU LO NECESITES!</h1>
-        </div>
-        <div class="businessComplet">
-          <div class="businessBody">
-            <div class="business">
-              <h2>Misión</h2>
-              <p>Generar servicios, transformar y comercializar  en forma eficiente el Servicio de Inspección No Destructiva,
-    						 así como nuestros productos a la Industria Nacional, fomentando la diversificación productiva que propicie
-    						 un valor agregado a cada uno de nuestros Clientes, siendo promotores de la tecnología de punta y apuntalando
-    						 la economía tanto del Estado como del País.</p>
+        <div class="for-container">
+          <h2><i class="fa fa-edit"></i> Editar Empleado</h2>
+          <form class="container-add-clients">
+            <div class="date-client">
+              <label for="name">Nombre Completo:</label>
+              <input type="text" name="name" value="">
+              <label for="telephone">Telefono:</label>
+              <input type="text" name="telephone" value="">
             </div>
-            <div class="business">
-              <h2>Visión</h2>
-              <p>Posicionar a Rayos X y Servicios Industriales S.A. de C.V. como empresa líder en la aplicación de
-    								Ensayos No Destructivos y soluciones vía el suministro a las instalaciones petroleras y de la
-    								iniciativa privada en la República Mexicana, proporcionando el servicio requerido, dentro de las
-    								normas de calidad y seguridad que  satisfagan a todos nuestros Clientes.</p>
+            <div class="date-client">
+              <label for="user">Usuario:</label>
+              <input type="text" name="user" value="">
+              <label for="password">Contrasena:</label>
+              <input type="text" name="password" value="">
             </div>
-
-          </div>
-          <div class="businessImg">
-            <img src="{{ url('img/MV1.jpg')}}" alt="">
-          </div>
-
-        </div>
-
+            <div class="button-client">
+              <a href="#" class="btn-success"><i class="fa fa-save"></i> Guardar</a>
+              <a href="{{ url('/admin/client') }}"  class="btn-danger"><i class="fa fa-times-rectangle-o"></i> Cancelar</a>
+            </div>
+          </form>
         </div>
       </div>
     </main>
-    <footer id="footerM">
+    <footer id="footer">
       <h3>© 2017 Todos Los Derechos Reservados</h3>
     </footer>
     <script type="text/javascript" src="{{ url('js/menu-vertical.js') }}"></script>

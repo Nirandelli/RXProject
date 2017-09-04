@@ -30,3 +30,27 @@ Route::get('/admin/add-client', function () {
 Route::get('/admin/edit-client', function () {
     return view('admin/client/edit-client');
 });
+
+Route::get('/admin/employee', function () {
+    return view('admin/employee/employee');
+});
+
+Route::get('/admin/add-employee', function () {
+    return view('admin/employee/add-employee');
+});
+
+Route:: get('/admin/edit-employee', function(){
+  return view('admin/employee/edit-employee');
+});
+
+Route:: get('/admin/quotation', function(){
+  return view('admin/quotation/quotation');
+});
+
+Route:: get('/admin/add-quotation', function(){
+  return view('admin/quotation/add-quotation');
+});
+
+Route:: get('/admin/edit-quotation', function(){
+  return view ('admin/quotation/edit-quotation');
+});

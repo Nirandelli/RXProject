@@ -496,6 +496,63 @@ thead{
 }
 
 /*************************************************/
+.searchProduct{
+  background: #1E8BC3;
+  color: #e4ece0;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.button-pdf{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.businessComplet{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+}
+.businessBody{
+  width:45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.business{
+  width: 90%;
+  height: auto;
+  border-radius: 6px;
+  border: 3px solid #378898;
+  padding: 10px;
+  font-family: sans-serif;
+  /*background-color: #378898;*/
+  text-align: justify;
+}
+.businessImg{
+  width: 50%;
+}
+.businessImg img{
+  width: 100%;
+  height: 100%;
+}
+
+.pdf{
+  background: #34495E;
+  color: #e4ece0;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+
+}
+
 .observation-clients{
   display: flex;
   flex-direction: column;
@@ -531,5 +588,33 @@ thead{
   font-size: 14px;
   bottom:0px;
   position: absolute;
+  border-top: 2px solid #222d32;
+}
+#footerM{
+  background-color: #fffff0;
+  width: 100%;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-family: Montserrat;
+  color:#222d32;
+  font-size: 14px;
+  bottom:0px;
+  /*position: absolute;*/
+  border-top: 2px solid #222d32;
+}
+#footerQuotation{
+  background-color: #fffff0;
+  width: 100%;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-family: Montserrat;
+  color:#222d32;
+  font-size: 14px;
+  bottom:0px;
+  /*position: absolute;*/
   border-top: 2px solid #222d32;
 }
