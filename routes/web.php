@@ -54,3 +54,23 @@ Route:: get('/admin/add-quotation', function(){
 Route:: get('/admin/edit-quotation', function(){
   return view ('admin/quotation/edit-quotation');
 });
+
+Route::get('/admin/inventaryMenu', function(){
+  return view ('admin/inventary/inventaryMenu');
+});
+
+Route::get('/admin/inventary', function(){
+  return view ('admin/inventary/inventary');
+});
+
+Route::get('/admin/add-product', function(){
+  return view ('admin/inventary/add-product');
+});
+
+Route::get('/admin/edit-product', function(){
+  return view ('admin/inventary/edit-product');
+});
+
+Route::get('/admin/add-out', function(){
+  return view ('admin/inventary/add-out');
+});

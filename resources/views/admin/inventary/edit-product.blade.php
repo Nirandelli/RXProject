@@ -29,10 +29,10 @@
         <ul class="ul-menu">
           <li class="li-menu-nav">MENU DE NAVEGACION</li>
           <li><a href="{{ url('/admin/admin-welcome') }}"><i class="fa fa-home"></i>Inicio</a></li>
-          <li class="active"><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Clientes</a></li>
-          <li><a href="{{ url('/admin/employee') }}"><i class="fa fa-user"></i>Empleados</a></li>
+          <li ><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Clientes</a></li>
+          <li ><a href="{{ url('/admin/employee') }}"><i class="fa fa-user"></i>Empleados</a></li>
           <li class="li-menu-nav">INVENTARIO</li>
-          <li><a href="inventary/product.html"><i class="fa fa-pencil-square"></i>Inventario</a></li>
+          <li class="active"><a href="{{url('admin/inventary')}}"><i class="fa fa-pencil-square"></i>Inventario</a></li>
           <li class="li-menu-nav">COTIZACION</li>
           <li><a href="{{url('admin/quotation')}}"><i class="fa fa-book"></i>Cotizacion</a></li>
         </ul>
@@ -44,38 +44,59 @@
             <ol>
               Se encuentra en
               <li><i class="fa fa-home"></i>Inicio</li>
-              <li class="ol-active"><i class="fa fa-edit"></i>Editar Clientes</li>
+              <li class="small-active"><i class="fa fa-pencil-square-o"></i>Inventario</li>
             </ol>
           </div>
         </div>
         <div class="for-container">
-          <h2><i class="fa fa-edit"></i> Editar Cliente</h2>
+          <h2><i class="fa fa-pencil-square-o"></i> Editar Producto</h2>
           <form class="container-add-clients">
             <div class="date-clients">
-              <label for="namBbusiness">Nombre de la Empresa:</label>
-              <input type="text" name="nameBusiness" value="">
-              <label for="rfc">RFC:</label>
-              <input type="text" name="rfc" value="">
+              <label for="nFactura">N° de Factura:</label>
+              <input type="text" name="nFactura" value="" >
+              <label for="nProduct">N° de Producto:</label>
+              <input type="text" name="nProduct" value="" >
+              <label for="provider">Proveedor:</label>
+              <input type="text" name="provider" value="">
+              <label for="adress">Dirección:</label>
+              <textarea type="text" rows="6" name="adress" ></textarea>
             </div>
             <div class="date-clients">
-              <label for="telephone">Telefono:</label>
-              <input type="text" name="telephone" value="">
-              <label for="correo">E-mail:</label>
-              <input type="text" name="correo" value="">
+              <label for="dateEntry">Fecha de Entrada:</label>
+              <input type="date" name="dateEntry" value="">
+              <label for="quantityEntry">Cantidad de Entrada:</label>
+              <input type="text" name="quantityEntry" value="" >
+              <label for="unit">Unidad de Medida:</label>
+              <select class="" name="">
+                <option value=""></option>
+                <option value="">Piezas</option>
+                <option value="">Metros</option>
+              </select>
+              <label for="cost">Costo:</label>
+              <input type="text" name="cost" value=""  >
             </div>
             <div class="date-clients">
-              <label for="adress">Direccion:</label>
-              <textarea type="text" rows="6" name="adress"></textarea>
+              <label for="salePrice1">Precio de Venta 1:</label>
+              <input type="text" name="salePrice1" value="" >
+              <label for="salePrice2">Precio de Venta 2:</label>
+              <input type="text" name="salePrice2" value="" >
+              <label for="salePrice3">Precio de Venta 3:</label>
+              <input type="text" name="salePrice3" value="" >
+              <label for="salePrice4">Precio de Venta 4:</label>
+              <input type="text" name="salePrice4" value="" >
             </div>
             <div class="button-client">
-              <a href="#" class="btn-success"><i class="fa fa-save"></i> Guardar</a>
-              <a href="{{ url('/admin/client') }}"  class="btn-danger"><i class="fa fa-times-rectangle-o"></i> Cancelar</a>
+              <a href="#" class="btn-success"><i class="fa fa-save"></i>  Agregar</a>
+              <a href="#"  class="btn-danger"><i class="fa fa-times-rectangle-o"></i>  Cancelar</a>
             </div>
           </form>
+          <div class="button-pdf">
+
+          </div>
         </div>
       </div>
     </main>
-    <footer id="footer">
+    <footer id="footerQuotation">
       <h3>© 2017 Todos Los Derechos Reservados</h3>
     </footer>
     <script type="text/javascript" src="{{ url('js/menu-vertical.js') }}"></script>

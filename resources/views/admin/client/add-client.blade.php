@@ -32,9 +32,9 @@
           <li class="active"><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Clientes</a></li>
           <li><a href="{{ url('/admin/employee') }}"><i class="fa fa-user"></i>Empleados</a></li>
           <li class="li-menu-nav">INVENTARIO</li>
-          <li><a href="inventary/product.html"><i class="fa fa-pencil-square"></i>Inventario</a></li>
+          <li><a href="{{url('admin/inventary')}}"><i class="fa fa-pencil-square"></i>Inventario</a></li>
           <li class="li-menu-nav">COTIZACION</li>
-          <li><a href="quotation/quotation.html"><i class="fa fa-book"></i>Cotizacion</a></li>
+          <li><a href="{{url('admin/quotation')}}"><i class="fa fa-book"></i>Cotizacion</a></li>
         </ul>
       </aside>
       <div class="container" id="container">
