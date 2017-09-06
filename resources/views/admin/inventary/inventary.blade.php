@@ -16,8 +16,23 @@
           <li onclick="menuVertical()"><i  class="fa fa-bars" aria-hidden="true"></i></li>
           <li>RAYOS X Y SERVICIOS INDUSTRIALES S.A. DE C.V.</li>
           <div class="sesion">
-            <p>Jose de la cruz Acopa Martinez</p>
-            <a href="#" class="btn-logout"><i class="fa fa-sign-out"></i> Cerrar Sesion</a>
+            <ul>
+              <li><img src="{{ url('img/icono1.png')}}" alt="" class="popout">
+                <ul>
+                  <div class="photo">
+                    <img src="{{ url('img/icono1.png')}}" alt="">
+                  </div>
+                  <div class="name">
+                    <h3>Nirandelli Patricio Mayo</h3>
+                    <h3></h3>
+                  </div>
+                  <li></li>
+                  <div class="footerSingout">
+                    <a href="#" class="sign-out"><i class="fa fa-sign-out"></i> Cerrar Sesión</a>
+                  </div>
+                </ul>
+              </li>
+            </ul>
           </div>
         </ul>
       </nav>
@@ -30,10 +45,10 @@
         <ul class="ul-menu">
           <li class="li-menu-nav">MENU DE NAVEGACION</li>
           <li><a href="{{ url('/admin/admin-welcome') }}"><i class="fa fa-home"></i>Inicio</a></li>
-          <li ><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Clientes</a></li>
+          <li ><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Proveedores</a></li>
           <li ><a href="{{ url('/admin/employee') }}"><i class="fa fa-user"></i>Empleados</a></li>
           <li class="li-menu-nav">INVENTARIO</li>
-          <li class="active"><a href="{{url('admin/inventary')}}"><i class="fa fa-pencil-square"></i>Inventario</a></li>
+          <li class="active"><a href="{{url('admin/inventaryMenu')}}"><i class="fa fa-pencil-square"></i>Inventario</a></li>
           <li class="li-menu-nav">COTIZACION</li>
           <li><a href="{{url('admin/quotation')}}"><i class="fa fa-book"></i>Cotización</a></li>
         </ul>
@@ -51,8 +66,7 @@
         </div>
         <div class="table-container">
           <div class="container-search">
-            <a href="{{url('admin/add-product')}}" class="btn-success" ><i class="fa fa-user-plus"></i> Registrar Productos</a>
-            <a href="{{url('admin/add-out')}}" class="btn-success" ><i class="fa fa-user-plus"></i> Salidas</a>
+            <a href="{{url('admin/add-product')}}" class="btn-green" ><i class="fa fa-user-plus"></i> Registrar Productos</a>
           </div>
           <div class="table">
             <table id="Jtabla">
@@ -61,7 +75,7 @@
                   <th>Acciones</th>
                   <th>N° de Factura</th>
                   <th>N° de Producto</th>
-                  <th>Fabricante</th>
+                  <th>Proveedores</th>
                   <th>Descripción</th>
                   <th>Fecha de Entrada</th>
                   <th>Cantidad de Entrada</th>
@@ -79,18 +93,18 @@
                     <a href="{{url('/admin/edit-product')}}"><i class="fa fa-pencil-square-o"></i></a>
                     <a href="#" alt="Eliminar"><i class="fa fa-trash-o"></i></a>
                   </td>
-                  <td>RXS-000-2017</td>
-                  <td>25-06-2017</td>
-                  <td>0001</td>
+                  <td>73472345</td>
+                  <td>73472524</td>
+                  <td>Gates</td>
                   <td>Servicios Electricos Automotriz Patricio</td>
-                  <td>PACR720402U71</td>
-                  <td>9932065554</td>
-                  <td>Rancheria Guineo Primera seccion carretera a reforma kilometro 11.5</td>
-                  <td>Nirandelli Patricio Mayo</td>
-                  <td>Encargado de sistemas</td>
-                  <td>delli.patricio.mayo@gmail.com</td>
-                  <td>7865</td>
-                  <td>mmmmmmmmmmmmmmmmmmmmmmhhgffffffffdfhj</td>
+                  <td>12/03/17</td>
+                  <td>50</td>
+                  <td>metros</td>
+                  <td>$500.00</td>
+                  <td>$500.00</td>
+                  <td>$500.00</td>
+                  <td>$500.00</td>
+                  <td>$500.00</td>
                 </tr>
               </tbody>
             </table>

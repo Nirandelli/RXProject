@@ -71,6 +71,14 @@ Route::get('/admin/edit-product', function(){
   return view ('admin/inventary/edit-product');
 });
 
+Route::get('/admin/inventary-out', function(){
+  return view ('admin/inventary/inventary-out');
+});
+
 Route::get('/admin/add-out', function(){
   return view ('admin/inventary/add-out');
+});
+
+Route::get('/admin/edit-out', function(){
+  return view ('admin/inventary/edit-out');
 });

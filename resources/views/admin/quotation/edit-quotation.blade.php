@@ -15,8 +15,23 @@
           <li onclick="menuVertical()"><i  class="fa fa-bars" aria-hidden="true"></i></li>
           <li>RAYOS X Y SERVICIOS INDUSTRIALES S.A. DE C.V.</li>
           <div class="sesion">
-            <p>Jose de la cruz Acopa Martinez</p>
-            <a href="#" class="btn-logout"><i class="fa fa-sign-out"></i> Cerrar Sesion</a>
+            <ul>
+              <li><img src="{{ url('img/icono1.png')}}" alt="" class="popout">
+                <ul>
+                  <div class="photo">
+                    <img src="{{ url('img/icono1.png')}}" alt="">
+                  </div>
+                  <div class="name">
+                    <h3>Nirandelli Patricio Mayo</h3>
+                    <h3></h3>
+                  </div>
+                  <li></li>
+                  <div class="footerSingout">
+                    <a href="#" class="sign-out"><i class="fa fa-sign-out"></i> Cerrar Sesión</a>
+                  </div>
+                </ul>
+              </li>
+            </ul>
           </div>
         </ul>
       </nav>
@@ -29,12 +44,12 @@
         <ul class="ul-menu">
           <li class="li-menu-nav">MENU DE NAVEGACION</li>
           <li><a href="{{ url('/admin/admin-welcome') }}"><i class="fa fa-home"></i>Inicio</a></li>
-          <li ><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Clientes</a></li>
-          <li class="active"><a href="{{ url('/admin/employee') }}"><i class="fa fa-user"></i>Empleados</a></li>
+          <li ><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Proveedores</a></li>
+          <li ><a href="{{ url('/admin/employee') }}"><i class="fa fa-user"></i>Empleados</a></li>
           <li class="li-menu-nav">INVENTARIO</li>
-          <li><a href="inventary/product.html"><i class="fa fa-pencil-square"></i>Inventario</a></li>
+          <li><a href="{{url('admin/inventaryMenu')}}"><i class="fa fa-pencil-square"></i>Inventario</a></li>
           <li class="li-menu-nav">COTIZACION</li>
-          <li><a href="{{url('/admin/quotation')}}"><i class="fa fa-book"></i>Cotizacion</a></li>
+          <li class="active"><a href="{{url('/admin/quotation')}}"><i class="fa fa-book"></i>Cotización <small class="bg-indicator">Editar</small></a></li>
         </ul>
       </aside>
       <div class="container" id="container">
@@ -44,19 +59,19 @@
             <ol>
               Se encuentra en
               <li><i class="fa fa-home"></i>Inicio</li>
-              <li class="small-active"><i class="fa fa-edit"></i>Editar Cotizacion</li>
+              <li class="small-active"><i class="fa fa-edit"></i>Editar Cotización</li>
             </ol>
           </div>
         </div>
         <div class="for-container">
-          <h2><i class="fa fa-edit"></i> Editar Cotizacion</h2>
+          <h2><i class="fa fa-edit"></i> Editar Cotización</h2>
           <form class="container-add-clients">
             <div class="date-clients">
               <label for="folio">Folio:</label>
               <input type="text" name="folio" value=""  >
               <label for="date">Fecha:</label>
               <input type="text" name="date" value=""  >
-              <label for="number-client">Numero de Cliente:</label>
+              <label for="number-client">Número de Cliente:</label>
               <input type="text" name="number-client" value=""  >
               <label for="name-company">Nombre de la empresa:</label>
               <input type="text" name="name-company" value=""  >
@@ -66,7 +81,7 @@
               <input type="text" name="rfc" value="" >
               <label for="telephone">Telefono:</label>
               <input type="text" name="telephone" value=""  >
-              <label for="adress">Direccion:</label>
+              <label for="adress">Dirección:</label>
               <textarea type="text" rows="6" name="adress" ></textarea>
             </div>
             <div class="date-clients">
@@ -76,7 +91,7 @@
               <input type="text" name="puesto" value="" >
               <label for="correo">E-mail:</label>
               <input type="text" name="correo" value=""  >
-              <label for="number-licitacion">Numero de Licitacion:</label>
+              <label for="number-licitacion">Número de Licitación:</label>
               <input type="text" name="numer-licitacion" value="" >
             </div>
             <div class="observation-clients">

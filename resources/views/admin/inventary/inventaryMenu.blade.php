@@ -16,8 +16,23 @@
           <li onclick="menuVertical()"><i  class="fa fa-bars" aria-hidden="true"></i></li>
           <li>RAYOS X Y SERVICIOS INDUSTRIALES S.A. DE C.V.</li>
           <div class="sesion">
-            <p>Jose de la cruz Acopa Martinez</p>
-            <a href="#" class="btn-logout"><i class="fa fa-sign-out"></i> Cerrar Sesion</a>
+            <ul>
+              <li><img src="{{ url('img/icono1.png')}}" alt="" class="popout">
+                <ul>
+                  <div class="photo">
+                    <img src="{{ url('img/icono1.png')}}" alt="">
+                  </div>
+                  <div class="name">
+                    <h3>Nirandelli Patricio Mayo</h3>
+                    <h3></h3>
+                  </div>
+                  <li></li>
+                  <div class="footerSingout">
+                    <a href="#" class="sign-out"><i class="fa fa-sign-out"></i> Cerrar Sesión</a>
+                  </div>
+                </ul>
+              </li>
+            </ul>
           </div>
         </ul>
       </nav>
@@ -30,10 +45,10 @@
         <ul class="ul-menu">
           <li class="li-menu-nav">MENU DE NAVEGACION</li>
           <li><a href="{{ url('/admin/admin-welcome') }}"><i class="fa fa-home"></i>Inicio</a></li>
-          <li ><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Clientes</a></li>
+          <li ><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Proveedores</a></li>
           <li ><a href="{{ url('/admin/employee') }}"><i class="fa fa-user"></i>Empleados</a></li>
           <li class="li-menu-nav">INVENTARIO</li>
-          <li class="active"><a href="{{url('admin/inventary')}}"><i class="fa fa-pencil-square"></i>Inventario</a></li>
+          <li class="active"><a href="{{url('admin/inventaryMenu')}}"><i class="fa fa-pencil-square"></i>Inventario</a></li>
           <li class="li-menu-nav">COTIZACION</li>
           <li><a href="{{url('admin/quotation')}}"><i class="fa fa-book"></i>Cotización</a></li>
         </ul>
@@ -55,10 +70,12 @@
             <a href="{{url('admin/add-out')}}" class="btn-success" ><i class="fa fa-user-plus"></i> Salidas</a>
           </div> -->
           <div class="inventary">
-            <!-- <h2><i class="fa fa-book"></i> Inventario</h2> -->
+            <div class="inventaryTitle">
+              <h2><i class="fa fa-book"></i> Inventario</h2>
+            </div>
             <div class="inventaryMenu">
-              <a href="#" class="product"> <i class="fa fa-leanpub fa-3x"></i><label for="">Productos</label></a>
-              <a href="#" class="out"> <i class="fa fa-sign-out fa-3x"></i><label for="">Salidas</label></a>
+              <a href="{{url('admin/inventary')}}" class="product"> <i class="fa fa-leanpub fa-3x"></i><label for="">Productos</label></a>
+              <a href="{{url('admin/inventary-out')}}" class="out"> <i class="fa fa-sign-out fa-3x"></i><label for="">Salidas</label></a>
               <a href="#" class="reports"> <i class="fa fa-book fa-3x"></i><label for="">Reportes</label></a>
             </div>
             <div class="img">
@@ -78,6 +95,7 @@
     <script src="{{ url('js/datatable/jQuery-2.1.3.min.js') }}"></script>
     <script src="{{ url('js/datatable/jquery.dataTables.js') }}" type="text/javascript"></script>
     <script src="{{ url('js/datatable/dataTables.bootstrap.js') }}" type="text/javascript"></script>
+    <script src="{{ url('js/toggle.js') }}" type="text/javascript"></script>
     <script type="text/javascript">
       $(function () {
         $('#Jtabla').dataTable({

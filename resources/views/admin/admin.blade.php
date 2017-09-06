@@ -15,8 +15,23 @@
           <li onclick="menuVertical()"><i  class="fa fa-bars" aria-hidden="true"></i></li>
           <li>RAYOS X Y SERVICIOS INDUSTRIALES S.A. DE C.V.</li>
           <div class="sesion">
-            <p>Jose de la cruz Acopa Martinez</p>
-            <a href="#" class="btn-logout"><i class="fa fa-sign-out"></i> Cerrar Sesion</a>
+            <ul>
+              <li><img src="{{ url('img/icono1.png')}}" alt="" class="popout">
+                <ul>
+                  <div class="photo">
+                    <img src="{{ url('img/icono1.png')}}" alt="">
+                  </div>
+                  <div class="name">
+                    <h3>Nirandelli Patricio Mayo</h3>
+                    <h3></h3>
+                  </div>
+                  <li></li>
+                  <div class="footerSingout">
+                    <a href="#" class="sign-out"><i class="fa fa-sign-out"></i> Cerrar Sesión</a>
+                  </div>
+                </ul>
+              </li>
+            </ul>
           </div>
         </ul>
       </nav>
@@ -29,17 +44,12 @@
         <ul class="ul-menu">
           <li class="li-menu-nav">MENU DE NAVEGACION</li>
           <li class="active"><a href="{{ url('/admin/admin-welcome') }}"><i class="fa fa-home"></i>Inicio</a></li>
-          <li><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Clientes</a></li>
+          <li><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Proveedores</a></li>
           <li><a href="{{ url('/admin/employee') }}"><i class="fa fa-user"></i>Empleados</a></li>
           <li class="li-menu-nav">INVENTARIO</li>
           <li class="i"><a href="{{url('admin/inventaryMenu')}}"><i class="fa fa-pencil-square"></i>Inventario</a></li>
-          <ul class="u">
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Salidas</a></li>
-            <li><a href="#">Reportes</a></li>
-          </ul>
           <li class="li-menu-nav">COTIZACION</li>
-          <li><a href="{{url('admin/quotation')}}"><i class="fa fa-book"></i>Cotizacion</a></li>
+          <li><a href="{{url('admin/quotation')}}"><i class="fa fa-book"></i>Cotización</a></li>
         </ul>
       </aside>
       <div class="container" id="container">
