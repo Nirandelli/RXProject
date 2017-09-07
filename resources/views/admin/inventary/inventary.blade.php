@@ -17,10 +17,10 @@
           <li>RAYOS X Y SERVICIOS INDUSTRIALES S.A. DE C.V.</li>
           <div class="sesion">
             <ul>
-              <li><img src="{{ url('img/icono1.png')}}" alt="" class="popout">
+              <li><img src="{{ url('img/image.png')}}" alt="" class="popout">
                 <ul>
                   <div class="photo">
-                    <img src="{{ url('img/icono1.png')}}" alt="">
+                    <img src="{{ url('img/image.png')}}" alt="">
                   </div>
                   <div class="name">
                     <h3>Nirandelli Patricio Mayo</h3>

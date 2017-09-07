@@ -30,20 +30,16 @@ background-image: {{ url('m.jpg')}};
   height: 100vh;
   position: fixed;
   margin: 55px 0px 0px 0px;
-  margin-top: 55px;
   z-index: 3;
 }
 
 .bg-indicator{
-  /*background: rgba(130, 148, 18, 0.7);*/
-  background: #0d7561;
-  /*background: #16a085;*/
-  color: #e4ece0;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 10px;
-  padding: 5px;
-  border-radius: 6px;
+  background: #2ecc71;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 11px;
+  padding: 4px 3px 0px 3px;
+  border-radius: 3px;
   text-decoration: none;
   margin-left: 10px;
 }
@@ -90,7 +86,7 @@ background-image: {{ url('m.jpg')}};
 
 .menu .ul-menu a {
   text-decoration: none;
-  padding: 20px 50px 20px 30px;
+  padding: 20px 50px 20px 15px;
   color: #b8c7ce;
   display: flex;
   border-left: 4px solid #222d32;
@@ -192,9 +188,9 @@ background-image: {{ url('m.jpg')}};
 .button-client{
   margin-top: 20px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-client .lost {
@@ -234,17 +230,25 @@ background-image: {{ url('m.jpg')}};
   font-size: 12px;
   padding: 5px;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   text-decoration: none;
 }
 
 .btn-success{
   background: #16a085;
   color: #e4ece0;
-  font-family: sans-serif;
+  font-family:Montserrat;
   font-weight: bold;
   padding: 10px;
   border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
   text-decoration: none;
+}
+
+.btn-success:hover{
+  background: #1abc9c;
 }
 
 .btn-danger{
@@ -254,6 +258,8 @@ background-image: {{ url('m.jpg')}};
   font-weight: bold;
   padding: 10px;
   border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
   text-decoration: none;
 }
 
@@ -264,6 +270,8 @@ background-image: {{ url('m.jpg')}};
   font-weight: bold;
   padding: 10px;
   border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
   text-decoration: none;
 }
 
@@ -602,7 +610,7 @@ select{
 .inventaryMenu .product  {
 
   padding: 0px 0px 0px 20px;
-  background: #16578c;
+  background: #34495E;
   text-align: center;
   border-radius: 6px;
   text-decoration: none;
@@ -624,7 +632,7 @@ select{
 
 .inventaryMenu .out  {
   padding: 0px 0px 0px 20px;
-  background: #a4c30b;
+  background: #96281B;
   text-align: center;
   border-radius: 6px;
   text-decoration: none;
@@ -647,7 +655,7 @@ select{
 
 .inventaryMenu .reports  {
   padding: 0px 0px 0px 0px;
-  background: #2a8b34;
+  background: #2574A9;
   text-align: center;
   border-radius: 6px;
   text-decoration: none;
@@ -708,6 +716,7 @@ select{
   width: 60px;
   /*width: 310px;*/
   margin-right: 80px;
+  margin-top: -8px;
   /*border: 3px solid rgb(207, 219, 48);*/
 }
 
@@ -715,6 +724,7 @@ select{
   /*border: 3px solid rgb(140, 201, 44);*/
   width: 40px;
   height: 40px;
+  border-radius: 50%;
 }
 .sesion ul{
   list-style: none;
@@ -764,14 +774,17 @@ select{
 }
 .footerSingout a{
   text-decoration: none;
-  background: rgba(148, 158, 28, 0.92);
-  padding: 10px;
+  background: #e74c3c;
+  padding: 12px 7px 6px 7px;
   color: #fff;
   border-radius: 6px;
-  margin-left: 200px;
+}
+
+.footerSingout a:hover{
+  background: #c0392b;
 }
 .footerSingout{
-  background: #dbdbdb;
+  background: #f2f2f2;
   /*background: #afb1b0;*/
   height: 40px;
   width: 100%;
