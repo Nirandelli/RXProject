@@ -119,3 +119,27 @@ Route::get('/users/edit-quotation', function(){
 Route::get('/users/inventaryMenu', function(){
   return view ('users/inventary/inventaryMenu');
 });
+
+Route::get('/users/inventary', function(){
+  return view ('users/inventary/inventary');
+});
+
+Route::get('/users/add-product', function(){
+  return view ('users/inventary/add-product');
+});
+
+Route::get('/users/edit-product', function(){
+  return view ('users/inventary/edit-product');
+});
+
+Route::get('/users/inventary-out', function(){
+  return view ('users/inventary/inventary-out');
+});
+
+Route::get('/users/add-out', function(){
+  return view ('users/inventary/add-out');
+});
+
+Route::get('/users/edit-out', function(){
+  return view ('users/inventary/edit-out');
+});

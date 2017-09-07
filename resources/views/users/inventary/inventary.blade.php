@@ -40,22 +40,21 @@
     <main class="wrapper">
       <aside class="menu" id="aside">
         <div class="logo">
-          <a href="{{ url('/admin/admin-welcome') }}"><img class="img-menu" src="{{ url('img/LogoRX.png')}}" alt=""></a>
+          <a href="{{ url('/users/users-welcome') }}"><img class="img-menu" src="{{ url('img/LogoRX.png')}}" alt=""></a>
         </div>
         <ul class="ul-menu">
           <li class="li-menu-nav">MENU DE NAVEGACION</li>
-          <li><a href="{{ url('/admin/admin-welcome') }}"><i class="fa fa-home"></i>Inicio</a></li>
-          <li ><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Proveedores</a></li>
-          <li ><a href="{{ url('/admin/employee') }}"><i class="fa fa-user"></i>Empleados</a></li>
+          <li ><a href="{{ url('/users/users-welcome') }}"><i class="fa fa-home"></i>Inicio</a></li>
+          <li ><a href="{{ url('/users/client') }}"><i class="fa fa-users"></i>Proveedores</a></li>
           <li class="li-menu-nav">INVENTARIO</li>
-          <li class="active"><a href="{{url('admin/inventaryMenu')}}"><i class="fa fa-pencil-square"></i>Inventario <small class="bg-indicator">Productos</small></a></li>
+          <li class="active" class="i"><a href="{{url('users/inventaryMenu')}}"><i class="fa fa-pencil-square"></i>Inventario <small class="bg-indicator">Productos</small></a></li>
           <li class="li-menu-nav">COTIZACION</li>
-          <li><a href="{{url('admin/quotation')}}"><i class="fa fa-book"></i>Cotización</a></li>
+          <li><a href="{{url('users/quotation')}}"><i class="fa fa-book"></i>Cotización</a></li>
         </ul>
       </aside>
       <div class="container" id="container">
         <div class="location">
-          <h1 class="title">Administrador</h1>
+          <h1 class="title">Invitado</h1>
           <div class="breadcrumb">
             <ol>
               Se encuentra en
@@ -66,7 +65,7 @@
         </div>
         <div class="table-container">
           <div class="container-search">
-            <a href="{{url('admin/add-product')}}" class="btn-green" ><i class="fa fa-user-plus"></i> Registrar Productos</a>
+            <a href="{{url('users/add-product')}}" class="btn-green" ><i class="fa fa-user-plus"></i> Registrar Productos</a>
           </div>
           <div class="table">
             <table id="Jtabla">
@@ -90,7 +89,7 @@
               <tbody class="tbodymain">
                 <tr class="tbody">
                   <td class="action">
-                    <a href="{{url('/admin/edit-product')}}"><i class="fa fa-pencil-square-o"></i></a>
+                    <a href="{{url('/users/edit-product')}}"><i class="fa fa-pencil-square-o"></i></a>
                     <a href="#" alt="Eliminar"><i class="fa fa-trash-o"></i></a>
                   </td>
                   <td>73472345</td>
