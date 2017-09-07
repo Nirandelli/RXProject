@@ -40,77 +40,69 @@
     <main class="wrapper">
       <aside class="menu" id="aside">
         <div class="logo">
-          <a href="{{ url('/admin/admin-welcome') }}"><img class="img-menu" src="{{ url('img/LogoRX.png')}}" alt=""></a>
+          <a href="{{ url('/users/users-welcome') }}"><img class="img-menu" src="{{ url('img/LogoRX.png')}}" alt=""></a>
         </div>
         <ul class="ul-menu">
           <li class="li-menu-nav">MENU DE NAVEGACION</li>
-          <li><a href="{{ url('/admin/admin-welcome') }}"><i class="fa fa-home"></i>Inicio</a></li>
-          <li ><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Proveedores</a></li>
-          <li ><a href="{{ url('/admin/employee') }}"><i class="fa fa-user"></i>Empleados</a></li>
+          <li ><a href="{{ url('/users/users-welcome') }}"><i class="fa fa-home"></i>Inicio</a></li>
+          <li class="active"><a href="{{ url('/users/client') }}"><i class="fa fa-users"></i>Proveedores</a></li>
           <li class="li-menu-nav">INVENTARIO</li>
-          <li><a href="{{url('admin/inventaryMenu')}}"><i class="fa fa-pencil-square"></i>Inventario</a></li>
+          <li class="i"><a href="{{url('users/inventaryMenu')}}"><i class="fa fa-pencil-square"></i>Inventario</a></li>
           <li class="li-menu-nav">COTIZACION</li>
-          <li class="active"><a href="{{url('admin/quotation')}}"><i class="fa fa-book"></i>Cotización</a></li>
+          <li><a href="{{url('users/quotation')}}"><i class="fa fa-book"></i>Cotización</a></li>
         </ul>
       </aside>
       <div class="container" id="container">
         <div class="location">
-          <h1 class="title">Administrador</h1>
+          <h1 class="title">Invitado</h1>
           <div class="breadcrumb">
             <ol>
               Se encuentra en
               <li><i class="fa fa-home"></i>Inicio</li>
-              <li class="small-active"><i class="fa fa-book"></i>Cotización</li>
+              <li class="ol-active"><i class="fa fa-users"></i>Proveedores</li>
             </ol>
           </div>
         </div>
         <div class="table-container">
           <div class="container-search">
-            <a href="{{url('admin/add-quotation')}}" class="btn-green" ><i class="fa fa-book"></i>  Cotizar</a>
+            <a href="{{ url('/users/add-client') }}" class="btn-green" ><i class="fa fa-user-plus"></i> Registrar Proveedor</a>
           </div>
-          <div class="table">
+          <div class="">
             <table id="Jtabla">
               <thead>
                 <tr class="theader">
                   <th>Acciones</th>
-                  <th>Folio</th>
-                  <th>Fecha</th>
-                  <th>Número de Cliente</th>
-                  <th>Nombre de la Empresa</th>
                   <th>RFC</th>
-                  <th>Teléfono</th>
+                  <th>Nombre de la Empresa</th>
                   <th>Dirección</th>
-                  <th>Nombre Completo</th>
-                  <th>Puesto</th>
-                  <th>Correo</th>
-                  <th>N° de Licitación</th>
-                  <th>Observaciones</th>
-                  <th>Productos</th>
-                  <th>SubTotal</th>
-                  <th>Total</th>
+                  <th>Teléfono</th>
+                  <th>E-mail</th>
                </tr>
               </thead>
               <tbody class="tbodymain">
                 <tr class="tbody">
-                  <td class="action">
-                    <a href="{{url('/admin/edit-quotation')}}"><i class="fa fa-pencil-square-o"></i></a>
-                    <a href="#" alt="Eliminar"><i class="fa fa-trash-o"></i></a>
+                  <td>
+                    <div class="action">
+                      <a href="{{ url('/users/edit-client') }}"><i class="fa fa-pencil-square-o fa-lg"></i></a>
+                    </div>
                   </td>
-                  <td>RXS-000-2017</td>
-                  <td>25-06-2017</td>
-                  <td>0001</td>
-                  <td>Servicios Electricos Automotriz Patricio</td>
                   <td>PACR720402U71</td>
-                  <td>9932065554</td>
+                  <td>Servicios Electricos Automotriz Patricio</td>
                   <td>Rancheria Guineo Primera seccion carretera a reforma kilometro 11.5</td>
-                  <td>Nirandelli Patricio Mayo</td>
-                  <td>Encargado de sistemas</td>
+                  <td>9932065554</td>
                   <td>delli.patricio.mayo@gmail.com</td>
-                  <td>7865</td>
-                  <td>mmmmmmmmmmmmmmmmmmmmmmhhgffffffffdfhj</td>
-                  <td>manguera</td>
-                  <td>600</td>
-                  <td>700</td
+                </tr>
+                <tr class="tbody">
+                  <td>
+                    <div class="action">
+                      <a href="{{ url('/users/edit-client') }}"><i class="fa fa-pencil-square-o fa-lg"></i></a>
+                    </div>
+                  </td>
+                  <td>PACR720402U71</td>
+                  <td>Servicios Electricos Automotriz Patricio</td>
+                  <td>Rancheria Guineo Primera seccion carretera a reforma kilometro 11.5</td>
+                  <td>9934298955</td>
+                  <td>jose.acopa.martinez@gmail.com</td>
                 </tr>
               </tbody>
             </table>
