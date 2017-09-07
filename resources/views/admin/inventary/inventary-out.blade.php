@@ -48,9 +48,9 @@
           <li ><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Proveedores</a></li>
           <li ><a href="{{ url('/admin/employee') }}"><i class="fa fa-user"></i>Empleados</a></li>
           <li class="li-menu-nav">INVENTARIO</li>
-          <li><a href="{{url('admin/inventaryMenu')}}"><i class="fa fa-pencil-square"></i>Inventario</a></li>
+          <li class="active"><a href="{{url('admin/inventaryMenu')}}"><i class="fa fa-pencil-square"></i>Inventario</a></li>
           <li class="li-menu-nav">COTIZACION</li>
-          <li class="active"><a href="{{url('admin/quotation')}}"><i class="fa fa-book"></i>Cotización</a></li>
+          <li><a href="{{url('admin/quotation')}}"><i class="fa fa-book"></i>Cotización</a></li>
         </ul>
       </aside>
       <div class="container" id="container">
@@ -60,57 +60,61 @@
             <ol>
               Se encuentra en
               <li><i class="fa fa-home"></i>Inicio</li>
-              <li class="small-active"><i class="fa fa-book"></i>Cotización</li>
+                <li class="small-active"><i class="fa fa-pencil-square"></i>Salidas</li>
             </ol>
           </div>
         </div>
         <div class="table-container">
           <div class="container-search">
-            <a href="{{url('admin/add-quotation')}}" class="btn-green" ><i class="fa fa-book"></i>  Cotizar</a>
+            <a href="{{url('admin/add-out')}}" class="btn-green" ><i class="fa fa-user-plus"></i> Registrar Salidas</a>
           </div>
           <div class="table">
             <table id="Jtabla">
               <thead>
                 <tr class="theader">
                   <th>Acciones</th>
-                  <th>Folio</th>
-                  <th>Fecha</th>
-                  <th>Número de Cliente</th>
-                  <th>Nombre de la Empresa</th>
-                  <th>RFC</th>
-                  <th>Teléfono</th>
-                  <th>Dirección</th>
-                  <th>Nombre Completo</th>
-                  <th>Puesto</th>
-                  <th>Correo</th>
-                  <th>N° de Licitación</th>
-                  <th>Observaciones</th>
-                  <th>Productos</th>
-                  <th>SubTotal</th>
-                  <th>Total</th>
+                  <th>N° de Factura</th>
+                  <th>N° de Producto</th>
+                  <th>Fabricante</th>
+                  <th>Descripción</th>
+                  <th>Fecha de Entrada</th>
+                  <th>Cantidad de Entrada</th>
+                  <th>Unidad de Medida</th>
+                  <th>Costo</th>
+                  <th>Precio de Venta 1</th>
+                  <th>Precio de Venta 2</th>
+                  <th>Precio de Venta 3</th>
+                  <th>Precio de Venta 4</th>
+                  <th>Fecha de Salida</th>
+                  <th>Cantidad de Salida</th>
+                  <th>Merma</th>
+                  <th>Existencia</th>
+                  <th>Precio Total</th>
                </tr>
               </thead>
               <tbody class="tbodymain">
                 <tr class="tbody">
                   <td class="action">
-                    <a href="{{url('/admin/edit-quotation')}}"><i class="fa fa-pencil-square-o"></i></a>
+                    <a href="{{url('/admin/edit-out')}}"><i class="fa fa-pencil-square-o"></i></a>
                     <a href="#" alt="Eliminar"><i class="fa fa-trash-o"></i></a>
                   </td>
-                  <td>RXS-000-2017</td>
-                  <td>25-06-2017</td>
-                  <td>0001</td>
+                  <td>73472345</td>
+                  <td>73472524</td>
+                  <td>Gates</td>
                   <td>Servicios Electricos Automotriz Patricio</td>
-                  <td>PACR720402U71</td>
-                  <td>9932065554</td>
-                  <td>Rancheria Guineo Primera seccion carretera a reforma kilometro 11.5</td>
-                  <td>Nirandelli Patricio Mayo</td>
-                  <td>Encargado de sistemas</td>
-                  <td>delli.patricio.mayo@gmail.com</td>
-                  <td>7865</td>
-                  <td>mmmmmmmmmmmmmmmmmmmmmmhhgffffffffdfhj</td>
-                  <td>manguera</td>
-                  <td>600</td>
-                  <td>700</td
+                  <td>12/03/17</td>
+                  <td>50</td>
+                  <td>metros</td>
+                  <td>$500.00</td>
+                  <td>$500.00</td>
+                  <td>$500.00</td>
+                  <td>$500.00</td>
+                  <td>$500.00</td>
+                  <td>$500.00</td>
+                  <td>$500.00</td>
+                  <td>$500.00</td>
+                  <td>$500.00</td>
+                  <td>$500.00</td>
                 </tr>
               </tbody>
             </table>
