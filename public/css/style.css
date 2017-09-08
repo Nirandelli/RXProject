@@ -654,7 +654,7 @@ select{
 }
 
 .inventaryMenu .reports  {
-  padding: 0px 0px 0px 0px;
+  padding: 5px 0px 0px 5px;
   background: #2574A9;
   text-align: center;
   border-radius: 6px;
