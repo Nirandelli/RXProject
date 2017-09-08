@@ -82,3 +82,64 @@ Route::get('/admin/add-out', function(){
 Route::get('/admin/edit-out', function(){
   return view ('admin/inventary/edit-out');
 });
+
+
+
+
+
+/**************Users***************************/
+Route::get('/users/users-welcome', function(){
+  return view ('users/users');
+});
+
+Route::get('/users/client', function(){
+  return view ('users/client/client');
+});
+
+Route::get('/users/edit-client', function(){
+  return view ('users/client/edit-client');
+});
+
+Route::get('/users/add-client', function(){
+  return view ('users/client/add-client');
+});
+
+Route::get('/users/quotation', function(){
+  return view ('users/quotation/quotation');
+});
+
+Route::get('/users/add-quotation', function(){
+  return view ('users/quotation/add-quotation');
+});
+
+Route::get('/users/edit-quotation', function(){
+  return view ('users/quotation/edit-quotation');
+});
+
+Route::get('/users/inventaryMenu', function(){
+  return view ('users/inventary/inventaryMenu');
+});
+
+Route::get('/users/inventary', function(){
+  return view ('users/inventary/inventary');
+});
+
+Route::get('/users/add-product', function(){
+  return view ('users/inventary/add-product');
+});
+
+Route::get('/users/edit-product', function(){
+  return view ('users/inventary/edit-product');
+});
+
+Route::get('/users/inventary-out', function(){
+  return view ('users/inventary/inventary-out');
+});
+
+Route::get('/users/add-out', function(){
+  return view ('users/inventary/add-out');
+});
+
+Route::get('/users/edit-out', function(){
+  return view ('users/inventary/edit-out');
+});
