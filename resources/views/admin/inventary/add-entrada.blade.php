@@ -59,12 +59,12 @@
             <ol>
               Se encuentra en
               <li><i class="fa fa-home"></i>Inicio</li>
-              <li class="small-active"><i class="fa fa-pencil-square"></i>Registrar Productos</li>
+              <li class="small-active"><i class="fa fa-pencil-square"></i>Registrar Entradas</li>
             </ol>
           </div>
         </div>
         <div class="for-container">
-          <h2><i class="fa fa-pencil-square"></i> Registrar Producto</h2>
+          <h2><i class="fa fa-pencil-square"></i> Registrar Entrada</h2>
           <form class="container-add-clients">
             <div class="date-clients">
               <label for="nFactura">N° de Factura:</label>

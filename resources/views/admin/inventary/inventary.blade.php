@@ -67,6 +67,9 @@
         <div class="table-container">
           <div class="container-search">
             <a href="{{url('admin/add-product')}}" class="btn-green" ><i class="fa fa-user-plus"></i> Registrar Productos</a>
+            <a href="{{url('admin/add-entrada')}}" class="btn-green" ><i class="fa fa-user-plus"></i> Entradas</a>
+            <a href="{{url('admin/inventary-out')}}" class="btn-green" ><i class="fa fa-user-plus"></i> Salidas</a>
+
           </div>
           <div class="table">
             <table id="Jtabla">

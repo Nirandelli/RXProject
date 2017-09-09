@@ -143,3 +143,7 @@ Route::get('/users/add-out', function(){
 Route::get('/users/edit-out', function(){
   return view ('users/inventary/edit-out');
 });
+
+Route::get('/admin/add-entrada', function(){
+  return view ('admin/inventary/add-entrada');
+});
