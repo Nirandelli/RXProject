@@ -2,7 +2,10 @@
   padding: 0;
   margin: 0;
 }
+/*.fondo{
+background-image: {{ url('m.jpg')}};
 
+}*/
 .nav{
   height: 55px;
   width: 100%;
@@ -23,12 +26,22 @@
 
 #aside{
   background-color: #222d32;
-  width: 220px;
+  width: 225px;
   height: 100vh;
   position: fixed;
   margin: 55px 0px 0px 0px;
-  margin-top: 55px;
   z-index: 3;
+}
+
+.bg-indicator{
+  background: #2ecc71;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 11px;
+  padding: 4px 3px 0px 3px;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-left: 10px;
 }
 
 .logo{
@@ -73,7 +86,7 @@
 
 .menu .ul-menu a {
   text-decoration: none;
-  padding: 20px 50px 20px 30px;
+  padding: 20px 50px 20px 15px;
   color: #b8c7ce;
   display: flex;
   border-left: 4px solid #222d32;
@@ -97,15 +110,7 @@
   border-left: 4px solid #1E8BC3;
 }
 
-.sesion{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 14px;
-  width: 310px;
-  margin-right: 30px;
-}
+
 /******************* Login***************************/
 .nav-login{
   background-color: #fffff0;
@@ -183,9 +188,9 @@
 .button-client{
   margin-top: 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
-  width: 100%;
+  width: 80%;
 }
 
 .button-client .lost {
@@ -225,17 +230,25 @@
   font-size: 12px;
   padding: 5px;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   text-decoration: none;
 }
 
 .btn-success{
   background: #16a085;
   color: #e4ece0;
-  font-family: sans-serif;
+  font-family:Montserrat;
   font-weight: bold;
   padding: 10px;
   border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
   text-decoration: none;
+}
+
+.btn-success:hover{
+  background: #1abc9c;
 }
 
 .btn-danger{
@@ -245,6 +258,8 @@
   font-weight: bold;
   padding: 10px;
   border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
   text-decoration: none;
 }
 
@@ -255,6 +270,8 @@
   font-weight: bold;
   padding: 10px;
   border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
   text-decoration: none;
 }
 
@@ -496,6 +513,75 @@ thead{
 }
 
 /*************************************************/
+.searchProduct{
+  background: #1E8BC3;
+  color: #e4ece0;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.button-pdf{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.businessComplet{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.businessComplet img{
+  width: 100%;
+  height: auto;
+}
+.businessBody{
+  width:45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.business{
+  width: 90%;
+  height: auto;
+  border-radius: 6px;
+  border: 3px solid #378898;
+  padding: 10px;
+  font-family: sans-serif;
+  /*background-color: #378898;*/
+  text-align: justify;
+}
+.businessImg{
+  width: 50%;
+}
+.businessImg img{
+  width: 100%;
+  height: 100%;
+}
+
+.pdf{
+  background: #34495E;
+  color: #e4ece0;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+
+}
+select{
+  width: 95%;
+  padding: 8px;
+  border-radius: 6px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #006064;
+  font-family: sans-serif;
+}
+
 .observation-clients{
   display: flex;
   flex-direction: column;
@@ -504,6 +590,210 @@ thead{
   font-weight: bold;
   color: #727274;
 }
+
+.inventary{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.inventaryMenu{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/**************Botones Products**********/
+.inventaryMenu .product  {
+
+  padding: 0px 0px 0px 20px;
+  background: #34495E;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+.inventaryMenu .product  i{
+  margin: 10px 35px 0px 0px;
+  color: #fff;
+}
+.inventaryMenu .product label{
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #62605e;
+  padding: 30px 35px 30px 35px;
+  background: #fff;
+}
+
+.inventaryMenu .out  {
+  padding: 0px 0px 0px 20px;
+  background: #96281B;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+
+}
+.inventaryMenu .out  i{
+  margin: 10px 30px 0px 15px;
+  color: #fff;
+}
+.inventaryMenu .out label{
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #62605e;
+  padding: 30px 46px 30px 46px;
+  background: #fff;
+}
+
+.inventaryMenu .reports  {
+  padding: 5px 0px 0px 5px;
+  background: #2574A9;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+.inventaryMenu .reports  i{
+  margin: 10px 40px 0px 15px;
+  color: #fff;
+}
+.inventaryMenu .reports label{
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #62605e;
+  padding: 30px 45px 30px 45px;
+  background: #fff;
+}
+.inventaryTitle{
+  color: #2C3E50;
+  font-family: Montserrat;
+  font-weight: 200;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/*************************************/
+.img{
+  width: 50%;
+  height: auto;
+}
+
+.img img{
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+}
+/**************Botones Products**********/
+.btn-green{
+  /*background: rgba(130, 148, 18, 0.7);*/
+  background: #0d7561;
+  /*background: #16a085;*/
+  color: #e4ece0;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+
+.sesion{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*justify-content: space-around;*/
+  font-size: 14px;
+  width: 60px;
+  /*width: 310px;*/
+  margin-right: 80px;
+  margin-top: -8px;
+  /*border: 3px solid rgb(207, 219, 48);*/
+}
+
+.sesion img{
+  /*border: 3px solid rgb(140, 201, 44);*/
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.sesion ul{
+  list-style: none;
+}
+.sesion li{
+  list-style: none;
+}
+
+.sesion li:hover{
+  display: block;
+}
+.sesion li ul {
+  display: none;
+}
+.sesion li:hover > ul {
+  background: #fff;
+  display: block;
+  width: 350px;
+  margin-left: -300px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 10px 5px #a3a9ab;
+}
+.photo{
+  width: 20%;
+  margin: 15px;
+}
+.photo img{
+  width: 75px;
+  height: 75px;
+}
+.name{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  width: 60%;
+  height: auto;
+  margin-top: 35px;
+}
+.name h3{
+  width: 100%;
+  color: #6e6d6d;
+}
+.footerSingout a{
+  text-decoration: none;
+  background: #e74c3c;
+  padding: 12px 7px 6px 7px;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.footerSingout a:hover{
+  background: #c0392b;
+}
+.footerSingout{
+  background: #f2f2f2;
+  /*background: #afb1b0;*/
+  height: 40px;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+}
+/******************************Toggle********************************************/
+
+/**************************************/
 
 #footer-login{
   background-color: #222d32;
@@ -521,6 +811,23 @@ thead{
 
 #footer{
   background-color: #fffff0;
+  /*background-color: #222d32;*/
+  /*background: #1E8BC3;*/
+  width: 100%;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-family: Montserrat;
+  color:#222d32;
+  /*color: #fff;*/
+  font-size: 14px;
+  bottom:0px;
+  position: absolute;
+  border-top: 2px solid #222d32;
+}
+#footerM{
+  background-color: #fffff0;
   width: 100%;
   height: 36px;
   display: flex;
@@ -530,6 +837,20 @@ thead{
   color:#222d32;
   font-size: 14px;
   bottom:0px;
-  position: absolute;
+  /*position: absolute;*/
+  border-top: 2px solid #222d32;
+}
+#footerQuotation{
+  background-color: #fffff0;
+  width: 100%;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-family: Montserrat;
+  color:#222d32;
+  font-size: 14px;
+  bottom:0px;
+  /*position: absolute;*/
   border-top: 2px solid #222d32;
 }

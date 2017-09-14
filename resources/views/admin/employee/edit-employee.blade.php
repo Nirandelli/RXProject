@@ -44,8 +44,8 @@
         <ul class="ul-menu">
           <li class="li-menu-nav">MENU DE NAVEGACION</li>
           <li><a href="{{ url('/admin/admin-welcome') }}"><i class="fa fa-home"></i>Inicio</a></li>
-          <li class="active"><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Proveedores <small class="bg-indicator">Editar</small></a></li>
-          <li><a href="{{ url('/admin/employee') }}"><i class="fa fa-user"></i>Empleados</a></li>
+          <li ><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Proveedores</a></li>
+          <li class="active"><a href="{{ url('/admin/employee') }}"><i class="fa fa-user"></i>Empleados <small class="bg-indicator">Editar</small></a></li>
           <li class="li-menu-nav">INVENTARIO</li>
           <li><a href="{{url('admin/inventaryMenu')}}"><i class="fa fa-pencil-square"></i>Inventario</a></li>
           <li class="li-menu-nav">COTIZACION</li>
@@ -59,32 +59,28 @@
             <ol>
               Se encuentra en
               <li><i class="fa fa-home"></i>Inicio</li>
-              <li class="ol-active"><i class="fa fa-edit"></i>Editar Proveedores</li>
+              <li class="ol-active"><i class="fa fa-pencil-square-o"></i>Editar Empleados</li>
             </ol>
           </div>
         </div>
         <div class="for-container">
-          <h2><i class="fa fa-edit"></i> Editar Proveedores</h2>
+          <h2><i class="fa fa-edit"></i> Editar Empleado</h2>
           <form class="container-add-clients">
-            <div class="date-clients">
-              <label for="namBbusiness">Nombre de la Empresa:</label>
-              <input type="text" name="nameBusiness" value="">
-              <label for="rfc">RFC:</label>
-              <input type="text" name="rfc" value="">
-            </div>
-            <div class="date-clients">
+            <div class="date-client">
+              <label for="name">Nombre Completo:</label>
+              <input type="text" name="name" value="">
               <label for="telephone">Teléfono:</label>
               <input type="text" name="telephone" value="">
-              <label for="correo">E-mail:</label>
-              <input type="text" name="correo" value="">
             </div>
-            <div class="date-clients">
-              <label for="adress">Dirección:</label>
-              <textarea type="text" rows="6" name="adress"></textarea>
+            <div class="date-client">
+              <label for="user">Usuario:</label>
+              <input type="text" name="user" value="">
+              <label for="password">Contraseña:</label>
+              <input type="text" name="password" value="">
             </div>
             <div class="button-client">
               <a href="#" class="btn-success"><i class="fa fa-save"></i> Guardar</a>
-              <a href="{{ url('/admin/client') }}"  class="btn-danger"><i class="fa fa-times-rectangle-o"></i> Cancelar</a>
+              <a href="{{ url('/admin/employee') }}"  class="btn-danger"><i class="fa fa-times-rectangle-o"></i> Cancelar</a>
             </div>
           </form>
         </div>

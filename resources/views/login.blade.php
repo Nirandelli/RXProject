@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/font-awesome/css/font-awesome.min.css') }}">
   </head>
-  <body>
+  <body class="fondo">
     <header>
       <nav class="nav-login">
         <ul class="ul">

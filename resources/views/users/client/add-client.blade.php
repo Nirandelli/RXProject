@@ -39,52 +39,51 @@
     <main class="wrapper">
       <aside class="menu" id="aside">
         <div class="logo">
-          <a href="{{ url('/admin/admin-welcome') }}"><img class="img-menu" src="{{ url('img/LogoRX.png')}}" alt=""></a>
+          <a href="{{ url('/users/users-welcome') }}"><img class="img-menu" src="{{ url('img/LogoRX.png')}}" alt=""></a>
         </div>
         <ul class="ul-menu">
           <li class="li-menu-nav">MENU DE NAVEGACION</li>
-          <li><a href="{{ url('/admin/admin-welcome') }}"><i class="fa fa-home"></i>Inicio</a></li>
-          <li class="active"><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Proveedores <small class="bg-indicator">Editar</small></a></li>
-          <li><a href="{{ url('/admin/employee') }}"><i class="fa fa-user"></i>Empleados</a></li>
+          <li ><a href="{{ url('/users/users-welcome') }}"><i class="fa fa-home"></i>Inicio</a></li>
+          <li class="active"><a href="{{ url('/users/client') }}"><i class="fa fa-users"></i>Proveedores <small class="bg-indicator">Registrar</small></a></li>
           <li class="li-menu-nav">INVENTARIO</li>
-          <li><a href="{{url('admin/inventaryMenu')}}"><i class="fa fa-pencil-square"></i>Inventario</a></li>
+          <li class="i"><a href="{{url('/users/inventaryMenu')}}"><i class="fa fa-pencil-square"></i>Inventario</a></li>
           <li class="li-menu-nav">COTIZACION</li>
-          <li><a href="{{url('admin/quotation')}}"><i class="fa fa-book"></i>Cotización</a></li>
+          <li><a href="{{url('/users/quotation')}}"><i class="fa fa-book"></i>Cotización</a></li>
         </ul>
       </aside>
       <div class="container" id="container">
         <div class="location">
-          <h1 class="title">Administrador</h1>
+          <h1 class="title">Invitado</h1>
           <div class="breadcrumb">
             <ol>
               Se encuentra en
               <li><i class="fa fa-home"></i>Inicio</li>
-              <li class="ol-active"><i class="fa fa-edit"></i>Editar Proveedores</li>
+              <li class="ol-active"><i class="fa fa-user-plus"></i>Registrar Proveedores</li>
             </ol>
           </div>
         </div>
         <div class="for-container">
-          <h2><i class="fa fa-edit"></i> Editar Proveedores</h2>
+          <h2><i class="fa fa-user-plus"></i> Registrar Proveedores</h2>
           <form class="container-add-clients">
             <div class="date-clients">
               <label for="namBbusiness">Nombre de la Empresa:</label>
-              <input type="text" name="nameBusiness" value="">
+              <input type="text" name="nameBusiness" value=""  placeholder="Nombre de la empresa">
               <label for="rfc">RFC:</label>
-              <input type="text" name="rfc" value="">
+              <input type="text" name="rfc" value=""  placeholder="RFC">
             </div>
             <div class="date-clients">
               <label for="telephone">Teléfono:</label>
-              <input type="text" name="telephone" value="">
+              <input type="text" name="telephone" value=""  placeholder="Teléfono">
               <label for="correo">E-mail:</label>
-              <input type="text" name="correo" value="">
+              <input type="text" name="correo" value=""  placeholder="E-mail">
             </div>
             <div class="date-clients">
               <label for="adress">Dirección:</label>
-              <textarea type="text" rows="6" name="adress"></textarea>
+              <textarea type="text" rows="6" name="adress"  placeholder="Dirección"></textarea>
             </div>
             <div class="button-client">
               <a href="#" class="btn-success"><i class="fa fa-save"></i> Guardar</a>
-              <a href="{{ url('/admin/client') }}"  class="btn-danger"><i class="fa fa-times-rectangle-o"></i> Cancelar</a>
+              <a href="{{ url('/users/client') }}"  class="btn-danger"><i class="fa fa-times-rectangle-o"></i> Cancelar</a>
             </div>
           </form>
         </div>

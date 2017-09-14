@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('js/datatable/dataTables.bootstrap.css') }}">
   </head>
   <body>
     <header>
@@ -44,10 +45,10 @@
         <ul class="ul-menu">
           <li class="li-menu-nav">MENU DE NAVEGACION</li>
           <li><a href="{{ url('/admin/admin-welcome') }}"><i class="fa fa-home"></i>Inicio</a></li>
-          <li class="active"><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Proveedores <small class="bg-indicator">Editar</small></a></li>
-          <li><a href="{{ url('/admin/employee') }}"><i class="fa fa-user"></i>Empleados</a></li>
+          <li ><a href="{{ url('/admin/client') }}"><i class="fa fa-users"></i>Proveedores</a></li>
+          <li ><a href="{{ url('/admin/employee') }}"><i class="fa fa-user"></i>Empleados</a></li>
           <li class="li-menu-nav">INVENTARIO</li>
-          <li><a href="{{url('admin/inventaryMenu')}}"><i class="fa fa-pencil-square"></i>Inventario</a></li>
+          <li class="active"><a href="{{url('admin/inventaryMenu')}}"><i class="fa fa-pencil-square"></i>Inventario</a></li>
           <li class="li-menu-nav">COTIZACION</li>
           <li><a href="{{url('admin/quotation')}}"><i class="fa fa-book"></i>Cotización</a></li>
         </ul>
@@ -59,34 +60,31 @@
             <ol>
               Se encuentra en
               <li><i class="fa fa-home"></i>Inicio</li>
-              <li class="ol-active"><i class="fa fa-edit"></i>Editar Proveedores</li>
+                <li class="small-active"><i class="fa fa-pencil-square"></i>Inventario</li>
             </ol>
           </div>
         </div>
-        <div class="for-container">
-          <h2><i class="fa fa-edit"></i> Editar Proveedores</h2>
-          <form class="container-add-clients">
-            <div class="date-clients">
-              <label for="namBbusiness">Nombre de la Empresa:</label>
-              <input type="text" name="nameBusiness" value="">
-              <label for="rfc">RFC:</label>
-              <input type="text" name="rfc" value="">
+        <div class="table-container">
+          <!-- <div class="container-search">
+            <a href="{{url('admin/add-product')}}" class="btn-success" ><i class="fa fa-user-plus"></i> Registrar Productos</a>
+            <a href="{{url('admin/add-out')}}" class="btn-success" ><i class="fa fa-user-plus"></i> Salidas</a>
+          </div> -->
+          <div class="inventary">
+            <div class="inventaryTitle">
+              <h2><i class="fa fa-book"></i> Inventario</h2>
             </div>
-            <div class="date-clients">
-              <label for="telephone">Teléfono:</label>
-              <input type="text" name="telephone" value="">
-              <label for="correo">E-mail:</label>
-              <input type="text" name="correo" value="">
+            <div class="inventaryMenu">
+              <a href="{{url('admin/inventary')}}" class="product"> <i class="fa fa-leanpub fa-3x"></i><label for="">Inventario</label></a>
+              <!-- <a href="{{url('admin/inventary-out')}}" class="out"> <i class="fa fa-sign-out fa-3x"></i><label for="">Salidas</label></a> -->
+              <a href="#" class="reports"> <i class="fa fa-book fa-3x"></i><label for="">Reportes</label></a>
             </div>
-            <div class="date-clients">
-              <label for="adress">Dirección:</label>
-              <textarea type="text" rows="6" name="adress"></textarea>
+            <div class="img">
+              <img src="{{ url('img/MV1.jpg')}}" alt="">
+
             </div>
-            <div class="button-client">
-              <a href="#" class="btn-success"><i class="fa fa-save"></i> Guardar</a>
-              <a href="{{ url('/admin/client') }}"  class="btn-danger"><i class="fa fa-times-rectangle-o"></i> Cancelar</a>
-            </div>
-          </form>
+
+          </div>
+
         </div>
       </div>
     </main>
@@ -94,5 +92,21 @@
       <h3>© 2017 Todos Los Derechos Reservados</h3>
     </footer>
     <script type="text/javascript" src="{{ url('js/menu-vertical.js') }}"></script>
+    <script src="{{ url('js/datatable/jQuery-2.1.3.min.js') }}"></script>
+    <script src="{{ url('js/datatable/jquery.dataTables.js') }}" type="text/javascript"></script>
+    <script src="{{ url('js/datatable/dataTables.bootstrap.js') }}" type="text/javascript"></script>
+    <script src="{{ url('js/toggle.js') }}" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function () {
+        $('#Jtabla').dataTable({
+          "bPaginate": true,
+          "bLengthChange": true,
+          "bFilter": true,
+          "bSort": true,
+          "bInfo": true,
+          "bAutoWidth": true
+        });
+      });
+    </script>
   </body>
 </html>
