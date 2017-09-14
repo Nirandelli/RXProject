@@ -60,7 +60,7 @@
             <ol>
               Se encuentra en
               <li><i class="fa fa-home"></i>Inicio</li>
-              <li class="small-active"><i class="fa fa-users"></i>Empleados</li>
+              <li class="ol-active"><i class="fa fa-users"></i>Empleados</li>
             </ol>
           </div>
         </div>
@@ -83,8 +83,8 @@
               <tbody class="tbodymain">
                 <tr class="tbody">
                   <td class="action">
-                    <a href="{{url('/admin/edit-employee')}}"><i class="fa fa-pencil-square-o"></i></a>
-                    <a href="#" alt="Eliminar"><i class="fa fa-trash-o"></i></a>
+                    <a href="{{url('/admin/edit-employee')}}"><i class="fa fa-pencil-square-o fa-lg"></i></a>
+                    <a href="#" alt="Eliminar"><i class="fa fa-trash-o fa-lg"></i></a>
                   </td>
                   <td>1</td>
                    <td>Jose de la cruz Acopa Martinez</td>
@@ -94,8 +94,8 @@
                 </tr>
                 <tr class="tbody">
                   <td class="action">
-                    <a href="edit-employee.html"><i class="fa fa-pencil-square-o"></i></a>
-                    <a href="#" alt="Eliminar"><i class="fa fa-trash-o"></i></a>
+                    <a href="edit-employee.html"><i class="fa fa-pencil-square-o fa-lg"></i></a>
+                    <a href="#" alt="Eliminar"><i class="fa fa-trash-o fa-lg"></i></a>
                   </td>
                   <td>2</td>
                    <td>Nirandelli Patricio Mayo</td>
